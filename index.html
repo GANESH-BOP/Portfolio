@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ganesh Krishna — UI/UX Portfolio</title>
+<style>
+  :root {
+    --bg: #0e141b;
+    --card: #18222f;
+    --accent: #4f8cff;
+    --text: #e8edf2;
+    --muted: #b5beca;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #101a25, transparent);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+  header p {
+    color: var(--muted);
+    margin: 6px 0 0;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 24px;
+  }
+  section {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 6px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .skill {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .project {
+    background: rgba(255,255,255,0.03);
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .project h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .project p {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ganesh Krishna</h1>
+  <p>Software Developer & UI/UX Enthusiast</p>
+</header>
+
+<main>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a passionate software developer skilled in Python, Java, and web technologies.
+      I enjoy designing and building clean, functional, and user-focused digital experiences.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Technology (Computer Science And Engineering)</strong> — Amrita School Of Engineering</li>
+      <li>Graduation Year: 2025</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">HTML / CSS / JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">SQL / MySQL</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">Figma (UI/UX)</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="project">
+        <h3>Automated Monitoring, Detection, and Analyzing Diseases in Crops</h3>
+        <p>Built a deep learning model using ResNet to detect crop diseases automatically through image analysis.</p>
+      </div>
+      <div class="project">
+        <h3>Smart Sensors in Wireless Sensor Networks</h3>
+        <p>Focused on data preprocessing and efficient sensor communication for environmental monitoring systems.</p>
+      </div>
+      <div class="project">
+        <h3>Classroom Attendance Manager</h3>
+        <p>Developed a front-end web app for managing student attendance using React and a REST API backend.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Created a responsive personal portfolio using HTML, CSS, and JavaScript to showcase projects and skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Python Programming — Coursera</li>
+      <li>CCNA 300-201 — Udemy</li>
+      <li>AWS Cloud Foundations — AWS Academy</li>
+      <li>AWS Cloud Architecture — AWS Academy</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email:</strong> ganeshkrishna@example.com</li>
+      <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/ganeshkrishna</a></li>
+      <li><strong>GitHub:</strong> <a href="#">github.com/GANESH-BOP</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Ganesh Krishna — Designed for Behance-style Portfolio
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
